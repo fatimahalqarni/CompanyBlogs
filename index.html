@@ -1,0 +1,39 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>    
+<body>    
+    <h2>Login Page</h2><br>    
+    <div class="login">     
+    <form id="login" method="get" action="login.php">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="button" name="log" id="log" value="Log In" onclick="validate()">       
+        <br><br>    
+        <br/><b class="valid">User Name: fatimah <br/>Password : 123456 </b> 
+    </form>     
+</div> 
+<script>
+  function validate(){
+  var username = document.getElementById("Uname").value;
+  var password = document.getElementById("Pass").value;
+  if ( username == "fatimah" && password == "123456"){
+  alert ("Login successfully");
+  window.location = "home.html"; 
+  return false;
+  }
+  }
+    </script>
+   
+</body>    
+</html>  

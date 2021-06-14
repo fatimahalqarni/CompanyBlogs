@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/adminStyle.css"> 
+<title>Admin page</title>
+</head>
+<body>
+
+<h1>Admin Page</h1>
+<div class="NavigationBar">
+    <a class="active" href="home.html">Home</a>
+    <a href="admin.html">Admin</a>
+  </div>
+<br>
+  <div class="NewBlog">
+<label for="blog">Write your blog here:</label>
+<br>
+<textarea id="blog" name="blog"
+          rows="5" cols="33">
+
+</textarea>
+
+<br>
+<button type="button" onclick="getInputValue();">Display</button>
+  </div>
+
+
+    <script>
+        function getInputValue(){
+            var inputVal = document.getElementById("blog").value;
+            alert(inputVal);
+        }
+    </script>
+
+    
+
+</body>
+</html>
